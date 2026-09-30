@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SaaS Via – An AI growth assistant on WhatsApp</title>
+<meta name="description" content="Tell SaaS Via about your online product on WhatsApp. Get a concrete growth plan in minutes. Free to start.">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="prog" aria-hidden="true"></div>
+<header class="nav"><div class="wrap">
+  <a class="logo" href="#top" aria-label="SaaS Via home">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f46e5"/><stop offset="1" stop-color="#0ea5d9"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="url(#g)"/><path d="M17 20 L28 45 L37 28 L46 43" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="17" cy="20" r="4" fill="#fff"/><circle cx="47" cy="44" r="5" fill="#fff"/></svg>
+    SaaS Via</a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav id="menu"><a href="#how">How it works</a><a href="#blog">Blog</a><a href="#contact">Contact</a><a class="btn btn-sm wa" href="#">Start chat</a></nav>
+</div></header>
+ 
+<main id="top">
+<section class="hero"><div class="wrap">
+  <div>
+    <h1>Grow your online product. <span class="grad">Just send a message.</span></h1>
+    <p class="lead">SaaS Via is an AI assistant on WhatsApp. Tell it what you sell and what's slowing you down, and it gives you a concrete next step for marketing, follow-ups, support and tools.</p>
+    <a class="btn wa" href="#">Chat with SaaS Via on WhatsApp →</a>
+    <div class="assure"><span>Free to start</span><span>No signup or app</span><span>Reply in seconds</span></div>
+  </div>
+  <div class="chat" aria-label="A real conversation with SaaS Via">
+    <div class="chat-h"><i>SV</i><div>Saas Via<small>Real conversation · scroll to read</small></div></div>
+    <div class="msgs" id="msgs" tabindex="0"></div>
+  </div>
+</div></section>
+ 
+<section id="how"><div class="wrap">
+  <div class="center"><span class="eyebrow">How it works</span><h2>Three steps. No forms.</h2>
+  <p>You never leave WhatsApp, so there's nothing to install or learn.</p></div>
+  <div class="steps">
+    <div class="step"><div class="badge">1</div><div class="ico">👋</div><h3>Say hello</h3><p>Tap the button. Your chat opens with a message already typed.</p></div>
+    <div class="step"><div class="badge">2</div><div class="ico">🧭</div><h3>Describe your business</h3><p>What you sell, how you work today, where time or sales are leaking, and your budget.</p></div>
+    <div class="step"><div class="badge">3</div><div class="ico">🎯</div><h3>Get a plan that fits</h3><p>Specific tools and actions sized to your budget, not a generic list.</p></div>
+  </div>
+</div></section>
+ 
+<section id="faq"><div class="wrap faq">
+  <h2>Before you start</h2>
+  <details><summary>Does it cost anything?</summary><p>Starting a chat is free. It will ask your budget so recommendations stay realistic.</p></details>
+  <details><summary>Am I talking to a person?</summary><p>No. It's an AI assistant, built to be quick and practical. It's best for planning and next steps.</p></details>
+  <details><summary>Will you spam me?</summary><p>No. You message first, and you can stop any time.</p></details>
+  <details><summary>Is it only for SaaS?</summary><p>No. It's for any online business, such as subscriptions, digital products and services.</p></details>
+</div></section>
+ 
+<section id="blog" class="blog"><div class="wrap">
+  <div class="blog-head">
+    <div><span class="eyebrow">The SaaS Via Journal</span><h2>Growth notes for builders</h2><p>Short, practical guides you can act on today.</p></div>
+    <div class="filters" id="filters" role="tablist" aria-label="Blog categories"></div>
+  </div>
+  <div id="posts"></div>
+</div></section>
+ 
+<section id="contact" class="contact"><div class="wrap">
+  <div>
+    <span class="eyebrow">Contact</span>
+    <h2>Prefer to write first?</h2>
+    <p>Share a few details and we'll open WhatsApp with everything filled in, so the assistant already knows your business.</p>
+    <div class="online"><span></span>Online now · rep                      lies in seconds</div>
+    <div class="socials" id="socials"></div>
+  </div>
+  <form class="form" id="form" novalidate>
+    <label>Your name<input name="name" autocomplete="name" required placeholder="Ahmed Khan"></label>
+    <label>WhatsApp number<input name="phone" type="tel" autocomplete="tel" required placeholder="0300 1234567"></label>
+    <label>Email (optional)<input name="email" type="email" autocomplete="email" placeholder="you@business.com"></label>
+    <label>Business type<select name="type" required><option value="">Choose one</option><option>Subscription / SaaS</option><option>Digital products</option><option>Online store</option><option>Services / agency</option><option>Other</option></select></label>
+    <label class="full">Monthly budget for tools (optional)<input name="budget" placeholder="e.g. 5000 PKR"></label>
+    <label class="full">What do you need help with?<textarea name="msg" required placeholder="e.g. I handle follow-ups manually and lose leads."></textarea></label>
+    <button class="btn full" type="submit">Send </button>
+    <p class="note full">We only use your details to reply to you.</p>
+    <div class="status" id="status" role="status"></div>
+  </form>
+</div></section>
+ 
+<section><div class="wrap"><div class="cta">
+  <h2>Tell us what you're building.</h2>
+  <p>One message is enough to start.</p>
+  <a class="btn wa" href="#">Open WhatsApp →</a>
+</div></div></section>
+</main>
+ 
+<footer><div class="wrap"><span>© <span id="yr"></span> SaaS Via · saasvia.com</span><span><a href="#how">How it works</a> · <a href="#blog">Blog</a></span></div></footer>
+ 
+<a class="wa-float wa" href="#" aria-label="Chat on WhatsApp"><svg viewBox="0 0 32 32" fill="none" stroke="#04210f" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M16 3A13 13 0 0 0 4.800 22.600L3 29l6.600-1.800A13 13 0 1 0 16 3z"/></svg><span>Chat now</span></a>
+ 
+<dialog id="dlg"><button class="x" aria-label="Close" onclick="dlg.close()">×</button><div id="art"></div><a class="btn wa" href="#" style="margin:0 1.6rem 1.6rem">Talk to SaaS Via about this →</a></dialog>
+ 
+<script src="script.js"></script>
+</body>
+</html>
+ 
